@@ -13,3 +13,5 @@ Utilize humble branch
 FT Sensor:
 git clone https://github.com/UTNuclearRobotics/rq_fts_ros2_driver.git
 Utilize main branch
+
+You make need to comment out the section in the launch file for the force monitor
