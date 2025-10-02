@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>combined_test</name>
+  <version>0.0.1</version>
+  <description>Launch package to bring up the Robotiq gripper, Robotiq FT sensor, and Intel RealSense camera together.</description>
+
+  <maintainer email="you@todo.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tool -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Core ROS2 dependencies -->
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+
+  <!-- RealSense Camera -->
+  <depend>realsense2_camera</depend>
+  <depend>realsense2_description</depend>
+  <depend>librealsense2</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>diagnostic_updater</depend>
+
+  <!-- Gripper -->
+  <depend>robotiq_description</depend>
+  <depend>controller_manager</depend>
+  <depend>ros2_control</depend>
+  <depend>ros2_controllers</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>xacro</depend>
+  <depend>urdf</depend>
+  <depend>rviz2</depend>
+
+  <!-- FT Sensor -->
+  <depend>robotiq_ft_sensor_hardware</depend>
+  <depend>robotiq_ft_sensor_interfaces</depend>
+  <depend>pluginlib</depend>
+  <depend>hardware_interface</depend>
+
+  <!-- Useful utilities -->
+  <depend>joint_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
